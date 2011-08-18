@@ -1,0 +1,32 @@
+---
+name: SOAP-Transport-TCP
+version: 0.714
+author:
+  - 'Martin Kutter <martin.kutter@fen-net.de>'
+abstract: TCP transport layer for SOAP::Lite
+license: artistic
+resources:
+  license: http://www.perlfoundation.org/artistic_license_1_0
+build_requires:
+  Test::More: 0
+requires:
+  IO::File: 0
+  Net::FTP: 0
+  SOAP::Lite: 0.714
+  perl: v5.6.2
+configure_requires:
+  Module::Build: 0.340201
+provides:
+  SOAP::Transport::TCP:
+    file: lib/SOAP/Transport/TCP.pm
+    version: 0.714
+  SOAP::Transport::TCP::Client:
+    file: lib/SOAP/Transport/TCP.pm
+  SOAP::Transport::TCP::Server:
+    file: lib/SOAP/Transport/TCP.pm
+  URI::tcp:
+    file: lib/SOAP/Transport/TCP.pm
+generated_by: Module::Build version 0.340201
+meta-spec:
+  url: http://module-build.sourceforge.net/META-spec-v1.4.html
+  version: 1.4
