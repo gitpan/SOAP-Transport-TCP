@@ -12,7 +12,7 @@ package SOAP::Transport::TCP;
 
 use strict;
 
-our $VERSION = 0.714;
+our $VERSION = 0.715;
 
 use URI;
 use IO::Socket;
@@ -22,12 +22,17 @@ use IO::SessionData;
 # ======================================================================
 
 package URI::tcp; # ok, let's do 'tcp://' scheme
+
+our $VERSION = 0.715;
+
 require URI::_server;
 @URI::tcp::ISA=qw(URI::_server);
 
 # ======================================================================
 
 package SOAP::Transport::TCP::Client;
+
+our $VERSION = 0.715;
 
 use vars qw(@ISA);
 require SOAP::Lite;
@@ -156,6 +161,8 @@ use IO::SessionSet;
 use Carp ();
 use vars qw($AUTOLOAD @ISA);
 @ISA = qw(SOAP::Server);
+
+our $VERSION = 0.715;
 
 sub DESTROY { SOAP::Trace::objects('()') }
 

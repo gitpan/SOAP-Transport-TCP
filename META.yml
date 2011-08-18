@@ -1,6 +1,6 @@
 ---
 name: SOAP-Transport-TCP
-version: 0.714
+version: 0.715
 author:
   - 'Martin Kutter <martin.kutter@fen-net.de>'
 abstract: TCP transport layer for SOAP::Lite
@@ -19,13 +19,16 @@ configure_requires:
 provides:
   SOAP::Transport::TCP:
     file: lib/SOAP/Transport/TCP.pm
-    version: 0.714
+    version: 0.715
   SOAP::Transport::TCP::Client:
     file: lib/SOAP/Transport/TCP.pm
+    version: 0.715
   SOAP::Transport::TCP::Server:
     file: lib/SOAP/Transport/TCP.pm
+    version: 0.715
   URI::tcp:
     file: lib/SOAP/Transport/TCP.pm
+    version: 0.715
 generated_by: Module::Build version 0.340201
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.4.html

@@ -5,7 +5,6 @@ $build = Module::Build->new(
     create_makefile_pl => 'small',
     dist_abstract      => 'TCP transport layer for SOAP::Lite',
     dist_name          => 'SOAP-Transport-TCP',
-    dist_version       => 0.714,
     module_name        => 'SOAP::Transport::TCP',
     license            => 'artistic',
     requires           => {
