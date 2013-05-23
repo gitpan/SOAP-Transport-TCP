@@ -1,35 +1,22 @@
 ---
-name: SOAP-Transport-TCP
-version: 0.715
+abstract: 'TCP Transport Support for SOAP::Lite'
 author:
-  - 'Martin Kutter <martin.kutter@fen-net.de>'
-abstract: TCP transport layer for SOAP::Lite
-license: artistic
-resources:
-  license: http://www.perlfoundation.org/artistic_license_1_0
+  - 'Martin Kutter <kutterma@users.sourceforge.net>'
 build_requires:
-  Test::More: 0
-requires:
-  IO::File: 0
-  Net::FTP: 0
-  SOAP::Lite: 0.714
-  perl: v5.6.2
+  ExtUtils::MakeMaker: 0
 configure_requires:
-  Module::Build: 0.340201
-provides:
-  SOAP::Transport::TCP:
-    file: lib/SOAP/Transport/TCP.pm
-    version: 0.715
-  SOAP::Transport::TCP::Client:
-    file: lib/SOAP/Transport/TCP.pm
-    version: 0.715
-  SOAP::Transport::TCP::Server:
-    file: lib/SOAP/Transport/TCP.pm
-    version: 0.715
-  URI::tcp:
-    file: lib/SOAP/Transport/TCP.pm
-    version: 0.715
-generated_by: Module::Build version 0.340201
+  ExtUtils::MakeMaker: 0
+dynamic_config: 1
+generated_by: 'ExtUtils::MakeMaker version 6.6302, CPAN::Meta::Converter version 2.120630'
+license: unknown
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.4.html
   version: 1.4
+name: SOAP-Transport-TCP
+no_index:
+  directory:
+    - t
+    - inc
+requires:
+  IO::SessionData: 1.03
+version: 0.716
